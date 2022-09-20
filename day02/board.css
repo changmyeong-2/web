@@ -1,0 +1,17 @@
+input {
+    text-align: center;
+    background-color: antiquewhite;
+}
+
+button {
+    background-color: aliceblue;
+    color: darkgreen;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+
+body {
+    text-align: center;
+}
