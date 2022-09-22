@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List_Test</title>>
+    <script>
+        function idCheck() {
+           id = document.getElementById('id')
+
+           if ( id.length < 5 ) {
+                result = '5글자 미만입니다. 다시 입력해주세요'
+           } else {
+                result = '올바르게 입력 했습니다.'
+           }
+
+           d1 = document.getElementById('d1')
+           d1.innerHTML = result
+        }
+        function pwCheck() {
+                pw1 = document.getElementById('pw1').value
+                pw1 = document.getElementById('pw1').value
+            if (pw1 == pw2) {
+                result2 = '동일함'
+            } else {
+                result2 = '동일하지 않음'
+            }
+            d2 = document.getElementById('d2')
+            d2.innerHTML = result2
+        }
+        
+    </script>
+</html>
+<body>
+   아이디 : <input type="text" id='id'>
+   <button onclick="idCheck()"> 글자 수 체크 </button> <br>
+
+   패스워드 <input type="text" id = 'pw1'> <br>
+   패스워드 확인 <input type="text" id = 'pw2'> <br>
+   <button onclick="pwCheck()"> 패스워드 동일 </button><br>
+   <hr>
+   <div id="d1">  </div>
+   <div id="d2">  </div>
+
+</body>
+</html>

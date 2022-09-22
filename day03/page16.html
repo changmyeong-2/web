@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>>
+    <script>
+       function plus() {
+            n1 = document.getElementById('n1').value
+            n2 = document.getElementById('n2').value
+             
+        }
+        function login() {
+            user = document.getElementById('user').value
+            pw = document.getElementById('pw').value
+            if (user == 'root' && pw == '1234') {
+                result = '<img src=008.png width=250 height=250>'
+            } else {
+                result = '<img src=sing.png width=250 height=250>'
+            }
+            //alert(result)
+            //d1.innerHTML = '<font color=red>' + result + '</Font>'
+            d1.innerHTML = result
+        }
+    </script>
+</html>
+<body>
+    숫자1: <input type="text"> <br>
+    숫자2: <input type="text"> <br>
+    <button onclick="plus()" style="background: yellow;">더하기</button>
+    <hr>
+    아이디 : <input type="text" id="user"><br>
+    비밀번호 : <input type="text" id="pw"><br>
+    <button onclick="login()" style="background: pink">로그인</button>
+    <hr>
+    <div id="d1"></div>
+</body>
+</html>
